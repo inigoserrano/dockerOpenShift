@@ -1,4 +1,4 @@
-FROM openshift/wildfly-101-centos7
+FROM openshift/wildfly-101-centos7:latest
 
 ADD https://downloads.mariadb.com/Connectors/java/connector-java-1.5.9/mariadb-java-client-1.5.9.jar /wildfly/modules/system/layers/base/org/mariadb/jdbc/main/
 COPY librerias/module.xml /wildfly/modules/system/layers/base/org/mariadb/jdbc/main/
